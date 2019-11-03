@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./css/edit.css">
+        <title>Add/Edit Astronaut</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="l-header">Add / Edit Astronaut</h1>
+            <div class="inputs-wrapper">
+                <input type="text" id="name" maxlength="15" placeholder="Name">
+                <input type="text" id="surname" maxlength="20"
+                    placeholder="Surname">
+                <input type="text" id="superpower" maxlength="20"
+                    placeholder="SuperPower">
+                <input type="date" id="date">
+                <p class="dateAlert"></p>
+                <a href="index.html" class="btn-confirm">Confirm</a>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+        <script src="./js/functions.js"></script>
+        <script src="./js/edit.js"></script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    text-align: center;
+    background: url(../img/background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.l-header {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.inputs-wrapper input {
+    margin: 1rem;
+    padding: .3rem .4rem;
+    width: 40%;
+    outline: none;
+    color: aliceblue;
+    border: 1px solid #e67e22;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .3)
+}
+
+.inputs-wrapper input::placeholder {
+    color: aliceblue;
+}
+
+.btn-confirm {
+    text-align: center;
+    display: inline-block;
+    padding: .3rem 1.6rem;
+    width: 20%;
+    background: #e67e22;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+.btn-confirm:hover {
+    background: #c75d00da;
+}
+
+.dateAlert {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+
+    * {
+        overflow: auto;
+    }
+    .inputs-wrapper input {
+      width: 50%;
+    }
+
+    .btn-confirm {
+        width: 50%;
+    }
+    
+  }
